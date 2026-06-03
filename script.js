@@ -16,8 +16,7 @@
     TELEGRAM_URL: "https://t.me/LisitsyUm_bot?start=svetofor",
     VK_URL: "https://vk.me/lisicium?ref=svetofor&ref_source=vizitka",
     MAX_URL: "https://max.ru/id780518760353_bot?start=svetofor",
-    // TODO: заменить на реальный числовой ID счётчика Яндекс.Метрики
-    METRIKA_ID: "METRIKA_ID",
+    METRIKA_ID: 109623181,
   };
 
   var urlByCta = {
