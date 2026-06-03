@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Готов ли ребёнок к школе? — бесплатная диагностика | ЛисицыУМ</title>
+    <meta
+      name="description"
+      content="За 45 минут спокойно узнайте, готов ли ребёнок к школе. Бесплатная встреча со старшим логопедом-дефектологом в Санкт-Петербурге. Без обязательств — решение остаётся за вами."
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="За 45 минут узнайте, готов ли ребёнок к школе"
+    />
+    <meta
+      property="og:description"
+      content="Бесплатная встреча с логопедом-дефектологом. Без обязательств — решение остаётся за вами."
+    />
+    <meta property="og:url" content="https://svetofor.xn--h1aahgxnu4b.xn--p1ai/" />
+
+    <!-- Favicon (положите квадратную иконку-лисицу в assets/favicon.png) -->
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+
+    <!-- Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Yandex.Metrika counter (PLACEHOLDER ID — replace METRIKA_ID) -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      // TODO: заменить METRIKA_ID на реальный числовой ID счётчика
+      window.__YM_ID__ = "METRIKA_ID";
+      if (window.__YM_ID__ && window.__YM_ID__ !== "METRIKA_ID") {
+        ym(window.__YM_ID__, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+        });
+      }
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/METRIKA_ID"
+          style="position: absolute; left: -9999px"
+          alt=""
+      /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+
+  <body>
+    <main class="app">
+      <!-- ====== ЭКРАН 1. HERO ====== -->
+      <header class="brand">
+        <img
+          class="brand__icon"
+          src="./assets/favicon.png"
+          alt=""
+          width="58"
+          height="58"
+          aria-hidden="true"
+        />
+        <span class="brand__text">
+          <span class="brand__descriptor">Центр речевого развития</span>
+          <span class="brand__name"
+            ><span class="brand__name--o">Лисицы</span><span
+              class="brand__name--g"
+              >УМ</span
+            ></span
+          >
+        </span>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="hero__title">
+          За 45 минут узнайте,<br />готов ли ребёнок к школе
+        </h1>
+        <p class="hero__subtitle">
+          Спокойная встреча со старшим логопедом-дефектологом. Бесплатно и без
+          обязательств — чтобы вы спокойно понимали, как ребёнок готов к школе.
+        </p>
+
+        <ul class="tags" aria-label="Направления центра">
+          <li class="tag tag--orange">Дефектолог</li>
+          <li class="tag tag--pink">Логопед</li>
+          <li class="tag tag--yellow">Психолог</li>
+          <li class="tag tag--blue">Подготовка к школе</li>
+        </ul>
+
+        <p class="cta-label">Выберите удобный способ записи:</p>
+        <div class="cta-row" role="group" aria-label="Записаться на диагностику">
+          <a
+            class="msg-btn msg-btn--max"
+            href="#"
+            data-cta="max"
+            data-placement="hero"
+            rel="noopener"
+          >
+            <span class="msg-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 1000 1000" focusable="false">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z"
+                />
+              </svg>
+            </span>
+            Записаться в Max
+          </a>
+
+          <a
+            class="msg-btn msg-btn--vk"
+            href="#"
+            data-cta="vk"
+            data-placement="hero"
+            rel="noopener"
+          >
+            <span class="msg-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2Zm3.08 14.27h-1.46c-.55 0-.72-.44-1.71-1.43-.86-.83-1.24-.94-1.45-.94-.3 0-.38.08-.38.5v1.31c0 .35-.11.56-1.04.56-1.54 0-3.24-.93-4.43-2.66-1.8-2.53-2.29-4.44-2.29-4.83 0-.21.08-.41.5-.41h1.46c.38 0 .52.17.66.56.73 2.09 1.95 3.92 2.45 3.92.19 0 .28-.09.28-.57v-2.22c-.06-1.02-.6-1.11-.6-1.47 0-.18.15-.35.39-.35h2.29c.31 0 .42.17.42.54v3c0 .32.15.43.24.43.19 0 .35-.11.69-.46.92-1.03 1.58-2.62 1.58-2.62.1-.23.27-.45.65-.45h1.46c.44 0 .54.22.44.53-.18.84-1.93 3.3-1.93 3.3-.16.26-.23.39 0 .69.17.22.72.7 1.09 1.13.66.76 1.17 1.4 1.3 1.84.14.43-.07.65-.48.65Z"
+                />
+              </svg>
+            </span>
+            Записаться в ВК
+          </a>
+
+          <a
+            class="msg-btn msg-btn--tg"
+            href="#"
+            data-cta="telegram"
+            data-placement="hero"
+            rel="noopener"
+          >
+            <span class="msg-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 240 240" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M81.486 130.178 52.2 120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229 2.1-2.2 6.489-4.523 120.106-45.36 120.106-45.36s3.208-1.081 5.1-.362a2.766 2.766 0 0 1 1.885 2.055 9.357 9.357 0 0 1 .254 2.585c-.009.752-.1 1.449-.169 2.542-.692 11.165-21.4 94.493-21.4 94.493s-1.239 4.876-5.678 5.043a8.13 8.13 0 0 1-5.925-2.292c-8.711-7.493-38.819-27.727-45.472-32.177a1.27 1.27 0 0 1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6 53.821-51.492c.108-.379-.3-.566-.848-.4-3.482 1.281-63.844 39.4-70.506 43.607a3.21 3.21 0 0 1-1.48.09z"
+                />
+              </svg>
+            </span>
+            Записаться в Telegram
+          </a>
+        </div>
+
+        <p class="trust-line">
+          Старший логопед-дефектолог · стаж 10 лет · Санкт-Петербург
+        </p>
+      </section>
+
+      <!-- ====== ЭКРАН 2. ЧТО ПРОВЕРИМ ====== -->
+      <section class="card card--check" aria-labelledby="check-title">
+        <h2 id="check-title" class="card__title">Что проверим за 45 минут</h2>
+        <ul class="check-list">
+          <li>Готовность к чтению</li>
+          <li>Письмо и графомоторику — как ребёнок держит руку, рисует</li>
+          <li>Счёт и представления об окружающем мире</li>
+          <li>Общение и умение работать в группе</li>
+          <li>Понимает ли и удерживает ли инструкцию</li>
+        </ul>
+        <p class="card__note">
+          Вы знаете ребёнка лучше всех — а мы добавим профессиональные методики
+          и насмотренность. По итогам поймёте, что у ребёнка уже получается, а
+          что стоит развить к школе.
+        </p>
+        <p class="card__note">
+          <strong>Воспитатель в саду скажет коротко «справится».</strong> Мы
+          покажем развёрнутую картину и понятный план — по методикам, которые
+          недоступны родителю дома.
+        </p>
+      </section>
+
+      <!-- ====== ЭКРАН 3. КТО ПРОВОДИТ И ПОЧЕМУ БЕСПЛАТНО ====== -->
+      <section class="card card--accent" aria-labelledby="why-title">
+        <h2 id="why-title" class="card__title">Кто проводит и почему бесплатно</h2>
+        <div class="why-block">
+          <p class="why-block__lead">
+            <strong>Проводит старший логопед-дефектолог</strong> со стажем 10
+            лет, специализация — подготовка дошкольников к школе.
+          </p>
+          <p>
+            <strong>Почему бесплатно.</strong> Это наша групповая диагностика —
+            так мы знакомим родителей с центром. Мы ничего не навязываем: по
+            итогам вы получите понятные рекомендации, а что делать дальше —
+            решаете только вы.
+          </p>
+          <p>
+            <strong>Без волнения и оценок.</strong> Это спокойная встреча, а не
+            экзамен. По итогам вы получите понятную картину и рекомендации, что
+            подтянуть к школе.
+          </p>
+        </div>
+      </section>
+
+      <!-- ====== ЭКРАН 4. КАК ПРОХОДИТ ====== -->
+      <section class="card card--steps" aria-labelledby="how-title">
+        <h2 id="how-title" class="card__title">Как проходит</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <span class="step__text"
+              >Записываетесь в удобном мессенджере и выбираете время.</span
+            >
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <span class="step__text"
+              >Приходите с ребёнком в наш центр в Санкт-Петербурге —
+              Ленинский проспект, 57, корп. 2.</span
+            >
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <span class="step__text"
+              >Ребёнок 45 минут занимается с логопедом — в спокойной,
+              дружелюбной форме.</span
+            >
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <span class="step__text"
+              >Вы получаете устные рекомендации сразу и письменное заключение на
+              руки.</span
+            >
+          </li>
+        </ol>
+      </section>
+
+      <!-- ====== ЭКРАН 5. ФИНАЛЬНЫЙ CTA ====== -->
+      <section class="card card--final" aria-labelledby="final-title">
+        <h2 id="final-title" class="card__title">Запишитесь сейчас</h2>
+        <p class="card__note">
+          Запись занимает минуту. В группе максимум 3 ребёнка — так у каждого
+          достаточно внимания логопеда.
+        </p>
+
+        <div class="cta-row" role="group" aria-label="Записаться на диагностику">
+          <a
+            class="msg-btn msg-btn--max"
+            href="#"
+            data-cta="max"
+            data-placement="final"
+            rel="noopener"
+          >
+            <span class="msg-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 1000 1000" focusable="false">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z"
+                />
+              </svg>
+            </span>
+            Записаться в Max
+          </a>
+
+          <a
+            class="msg-btn msg-btn--vk"
+            href="#"
+            data-cta="vk"
+            data-placement="final"
+            rel="noopener"
+          >
+            <span class="msg-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2Zm3.08 14.27h-1.46c-.55 0-.72-.44-1.71-1.43-.86-.83-1.24-.94-1.45-.94-.3 0-.38.08-.38.5v1.31c0 .35-.11.56-1.04.56-1.54 0-3.24-.93-4.43-2.66-1.8-2.53-2.29-4.44-2.29-4.83 0-.21.08-.41.5-.41h1.46c.38 0 .52.17.66.56.73 2.09 1.95 3.92 2.45 3.92.19 0 .28-.09.28-.57v-2.22c-.06-1.02-.6-1.11-.6-1.47 0-.18.15-.35.39-.35h2.29c.31 0 .42.17.42.54v3c0 .32.15.43.24.43.19 0 .35-.11.69-.46.92-1.03 1.58-2.62 1.58-2.62.1-.23.27-.45.65-.45h1.46c.44 0 .54.22.44.53-.18.84-1.93 3.3-1.93 3.3-.16.26-.23.39 0 .69.17.22.72.7 1.09 1.13.66.76 1.17 1.4 1.3 1.84.14.43-.07.65-.48.65Z"
+                />
+              </svg>
+            </span>
+            Записаться в ВК
+          </a>
+
+          <a
+            class="msg-btn msg-btn--tg"
+            href="#"
+            data-cta="telegram"
+            data-placement="final"
+            rel="noopener"
+          >
+            <span class="msg-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 240 240" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M81.486 130.178 52.2 120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229 2.1-2.2 6.489-4.523 120.106-45.36 120.106-45.36s3.208-1.081 5.1-.362a2.766 2.766 0 0 1 1.885 2.055 9.357 9.357 0 0 1 .254 2.585c-.009.752-.1 1.449-.169 2.542-.692 11.165-21.4 94.493-21.4 94.493s-1.239 4.876-5.678 5.043a8.13 8.13 0 0 1-5.925-2.292c-8.711-7.493-38.819-27.727-45.472-32.177a1.27 1.27 0 0 1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6 53.821-51.492c.108-.379-.3-.566-.848-.4-3.482 1.281-63.844 39.4-70.506 43.607a3.21 3.21 0 0 1-1.48.09z"
+                />
+              </svg>
+            </span>
+            Записаться в Telegram
+          </a>
+        </div>
+        <p class="trust-line">Без обязательств · решение принимаете вы</p>
+      </section>
+
+      <!-- ====== ФУТЕР ====== -->
+      <footer class="footer">
+        <div class="footer__brand">
+          <img
+            class="footer__logo"
+            src="./assets/logo.png"
+            alt="ЛисицыУМ — Центр речевого развития"
+            width="180"
+            height="79"
+            loading="lazy"
+          />
+        </div>
+        <p class="footer__line">Санкт-Петербург</p>
+        <p class="footer__line footer__muted">
+          Адрес: г. Санкт-Петербург, Ленинский проспект, 57, корп. 2
+        </p>
+        <p class="footer__line footer__muted">
+          Телефон: <a href="tel:+79218550505">+7 (921) 855-05-05</a>
+        </p>
+        <p class="footer__line">
+          <a href="#" class="footer__policy"
+            >Политика обработки персональных данных</a
+          >
+        </p>
+      </footer>
+    </main>
+
+    <!-- ====== STICKY-BAR ====== -->
+    <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+      <a class="sticky-cta__btn" href="#" data-scroll-to="final">
+        Записаться на бесплатную диагностику
+      </a>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
