@@ -90,34 +90,10 @@ body {
   align-items: center;
   gap: 12px;
 }
-.brand__icon {
-  width: 58px;
-  height: 58px;
-  flex-shrink: 0;
+.brand__logo {
+  height: 52px;
+  width: auto;
   display: block;
-}
-.brand__text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.05;
-}
-.brand__descriptor {
-  font-weight: 700;
-  font-size: 10px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.brand__name {
-  font-weight: 800;
-  font-size: 26px;
-  letter-spacing: -0.01em;
-}
-.brand__name--o {
-  color: var(--orange);
-}
-.brand__name--g {
-  color: var(--green-ink);
 }
 
 /* ---------- Теги-таблетки (направления центра) ---------- */
